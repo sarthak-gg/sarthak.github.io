@@ -1,198 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Submit List</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('https://source.unsplash.com/1920x1080/?nature,environment');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 800px;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-
-        .dropdown-container {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        select {
-            width: 30%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #f9f9f9;
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            cursor: pointer;
-        }
-
-        button {
-            width: 100%;
-            padding: 12px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        .result-box {
-            margin-top: 20px;
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #f9f9f9;
-        }
-
-        .list-item {
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        .list-item:last-child {
-            border-bottom: none;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-
-        .button-container button {
-            width: 48%;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-            background-color: #222;
-            color: #fff;
-            font-size: 14px;
-            border-top: 3px solid #007bff;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    
 </head>
 <body>
-    <div class="container">
-        <div class="dropdown-container">
-            <select id="dropdown1" name="States">
-                <option value="" disabled selected>States</option>
-                <option value="Andhra Pradesh">Andhra Pradesh</option>
-                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                <option value="Assam">Assam</option>
-                <option value="Bihar">Bihar</option>
-                <option value="Chhattisgarh">Chhattisgarh</option>
-                <option value="Goa">Goa</option>
-                <option value="Gujarat">Gujarat</option>
-                <option value="Haryana">Haryana</option>
-                <option value="Himachal Pradesh">Himachal Pradesh</option>
-                <option value="Jharkhand">Jharkhand</option>
-                <option value="Karnataka">Karnataka</option>
-                <option value="Kerala">Kerala</option>
-                <option value="Madhya Pradesh">Madhya Pradesh</option>
-                <option value="Maharashtra">Maharashtra</option>
-                <option value="Manipur">Manipur</option>
-                <option value="Meghalaya">Meghalaya</option>
-                <option value="Mizoram">Mizoram</option>
-                <option value="Nagaland">Nagaland</option>
-                <option value="Odisha">Odisha</option>
-                <option value="Punjab">Punjab</option>
-                <option value="Rajasthan">Rajasthan</option>
-                <option value="Sikkim">Sikkim</option>
-                <option value="Tamil Nadu">Tamil Nadu</option>
-                <option value="Telangana">Telangana</option>
-                <option value="Tripura">Tripura</option>
-                <option value="Uttar Pradesh">Uttar Pradesh</option>
-                <option value="Uttarakhand">Uttarakhand</option>
-                <option value="West Bengal">West Bengal</option>
-            </select>
-            <select id="dropdown2" name="Period">
-                <option value="" disabled selected>Period</option>
-                <option value="Yearly">Yearly</option>
-                <option value="Monthly">Monthly</option>
-                <option value="Weekly">Weekly</option>
-            </select>
-            <select id="dropdown3" name="Batches">
-                <option value="" disabled selected>Batches</option>
-                <option value="Batch 1">Batch 1</option>
-                <option value="Batch 2">Batch 2</option>
-                <option value="Batch 3">Batch 3</option>
-            </select>
+    <header>
+        <a href="#" class="logo">Alex</a>
+
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="#" >Services</a>
+            <a href="#" >Skills</a>
+            <a href="#" >Education</a>
+            <a href="#" >Experience</a>
+            <a href="#" >Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
         </div>
-        <button onclick="submitSelections()">Submit</button>
-
-        <div class="result-box" id="resultBox">
-            <!-- Results will appear here -->
+        <div class="home-content">
+            <h1>Hi, It's <span>Alex</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
         </div>
-
-        <div class="button-container">
-            <button onclick="clearSelections()">Clear</button>
-            <button onclick="alert('More actions coming soon!')">More Options</button>
-        </div>
-    </div>
-
-    <footer>
-        Created by Deathrow. Registered Copyright ©
-    </footer>
-
-    <script>
-        function submitSelections() {
-            const dropdown1 = document.getElementById('dropdown1').value;
-            const dropdown2 = document.getElementById('dropdown2').value;
-            const dropdown3 = document.getElementById('dropdown3').value;
-
-            const resultBox = document.getElementById('resultBox');
-            resultBox.innerHTML = '';
-
-            const selectedItems = [dropdown1, dropdown2, dropdown3];
-
-            selectedItems.forEach(item => {
-                const listItem = document.createElement('div');
-                listItem.className = 'list-item';
-                listItem.textContent = item;
-                resultBox.appendChild(listItem);
-            });
-        }
-
-        function clearSelections() {
-            document.getElementById('dropdown1').selectedIndex = 0;
-            document.getElementById('dropdown2').selectedIndex = 0;
-            document.getElementById('dropdown3').selectedIndex = 0;
-            document.getElementById('resultBox').innerHTML = '';
-        }
-
-    </script>
+    </section>
 </body>
 </html>
